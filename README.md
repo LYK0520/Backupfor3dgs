@@ -30,7 +30,8 @@ https://github.com/g-truc/glm/tree/5c46b9c07008ae65cb81ab79cd677ecc1934b903
 请打开x64 Native Tools Command Prompt for VS 2022后激活对应环境之后继续，参考以下博客[fatal error C1083: 无法打开包括文件: “crtdefs.h”: No such file or directory-CSDN博客](https://blog.csdn.net/m0_73958841/article/details/143237706)应该是对应的默认cuda和vs的位数不同。打开对应环境下载即可。
 
 4、过程中有遇到subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1问题，请C:\Users\XXX\anaconda3\envs\guassian_splatting\Lib\site-packages\torch\utils中的cpp_extension.py中570行将self.use_ninja = kwargs.get('use_ninja', True)这里的True改为False，禁用ninja。到这里应该可以正常下载安装。可以参考这个，应该禁用不只有一种方法[diff-gaussian-rasterization安装踩坑记录-CSDN博客](https://blog.csdn.net/m0_72395250/article/details/148896000)
-项目资源汇总：
+项目资源汇总（感谢作者的开源支持）：
+3dgs：https://github.com/graphdeco-inria/gaussian-splatting
 
 diff-gaussian-rasterization更新后的版本：
 
